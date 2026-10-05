@@ -17,8 +17,6 @@ const testimonials = {
   }
 };
 
-// Projects are stored in an ARRAY of objects.
-// "tech" is a list, so each technology can be shown as its own coloured tag.
 const projects = [
   {
     icon: "🌐",
@@ -40,10 +38,8 @@ const projects = [
   }
 ];
 
-// ---------- SHOW TESTIMONIALS ----------
 const testimonialList = document.getElementById("testimonial-list");
 
-// A "for...in" loop goes through every key in the object (t1, t2, t3).
 for (const key in testimonials) {
   const t = testimonials[key];
 
@@ -57,13 +53,11 @@ for (const key in testimonials) {
   testimonialList.appendChild(card);
 }
 
-// ---------- SHOW PROJECTS ----------
+
 const projectList = document.getElementById("project-list");
 
-// A "for...of" loop goes through every item in the array.
 for (const project of projects) {
 
-  // A second loop turns the tech list into little coloured tags.
   let pills = "";
   for (const item of project.tech) {
     pills += '<span class="pill">' + item + "</span>";
