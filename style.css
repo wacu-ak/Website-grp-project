@@ -1,4 +1,4 @@
-/* ---------- Colors and sizes (change these to restyle the site) ---------- */
+
 :root {
   --background: #f5f3ff;
   --text: #1e1b4b;
@@ -14,7 +14,6 @@
   --radius: 14px;
 }
 
-/* ---------- Basic reset ---------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -77,7 +76,6 @@ nav a:hover {
   color: var(--yellow);
 }
 
-/* ---------- Hero (the big colourful top section) ---------- */
 .hero {
   position: relative;
   overflow: hidden;
@@ -86,7 +84,6 @@ nav a:hover {
   color: #ffffff;
 }
 
-/* A big soft circle for decoration */
 .hero::before {
   content: "";
   position: absolute;
@@ -199,7 +196,7 @@ nav a:hover {
   stroke-linejoin: round;
 }
 
-/* ---------- Sections ---------- */
+
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -216,7 +213,6 @@ h2 {
   margin-bottom: 28px;
 }
 
-/* A colourful bar under each heading */
 main h2::after {
   content: "";
   display: block;
@@ -226,8 +222,6 @@ main h2::after {
   border-radius: 3px;
   background: linear-gradient(90deg, var(--coral), var(--yellow));
 }
-
-/* ---------- Cards (testimonials and projects) ---------- */
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -248,7 +242,7 @@ main h2::after {
   transform: translateY(-5px);
 }
 
-/* Each card gets its own colour: coral, teal, then purple, and repeat */
+
 .card:nth-child(3n + 1) { --tone: var(--coral); }
 .card:nth-child(3n + 2) { --tone: var(--teal); }
 .card:nth-child(3n + 3) { --tone: var(--purple); }
@@ -354,7 +348,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ---------- Respect people who turn off animations ---------- */
 @media (prefers-reduced-motion: reduce) {
   .hero-art {
     animation: none;
@@ -364,7 +357,6 @@ footer {
   }
 }
 
-/* ---------- Bonus: responsive (phones) ---------- */
 @media (max-width: 600px) {
   .hero {
     padding: 48px 20px 110px;
