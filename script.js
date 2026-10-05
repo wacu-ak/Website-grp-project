@@ -1,6 +1,4 @@
-// ---------- DATA ----------
-// Testimonials are stored in an OBJECT. Each testimonial has a key (t1, t2...)
-// and its own object with a name, a role and a quote. Edit these with your own.
+
 const testimonials = {
   t1: {
     name: "Amina K.",
