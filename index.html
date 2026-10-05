@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abbie Kangethe | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <a class="name" href="#top">Abbie Kangethe</a>
+    <nav>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO: big colourful intro with an SVG drawing -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hello">Hello, I'm</p>
+        <h1>Abbie Kangethe</h1>
+        <p class="subtitle">I'm learning to build websites with HTML, CSS and JavaScript.</p>
+        <a class="button" href="#projects">See my projects</a>
+      </div>
+
+      <!-- This drawing is an SVG. Each shape is a <rect>, <circle> or <polygon> -->
+      <svg class="hero-art" viewBox="0 0 400 300" role="img" aria-label="Illustration of a laptop showing code">
+        <circle cx="50" cy="70" r="26" fill="#ffc93c"/>
+        <circle cx="360" cy="230" r="34" fill="#14b8a6"/>
+        <polygon points="350,40 360,65 387,67 366,84 373,110 350,96 327,110 334,84 313,67 340,65" fill="#ff6b6b"/>
+        <rect x="85" y="55" width="230" height="150" rx="12" fill="#1e1b4b"/>
+        <rect x="97" y="67" width="206" height="126" rx="6" fill="#4338ca"/>
+        <rect x="112" y="84" width="70" height="9" rx="4" fill="#ffc93c"/>
+        <rect x="112" y="104" width="130" height="9" rx="4" fill="#5eead4"/>
+        <rect x="128" y="124" width="100" height="9" rx="4" fill="#ff8fa3"/>
+        <rect x="128" y="144" width="60" height="9" rx="4" fill="#ffc93c"/>
+        <rect x="112" y="164" width="110" height="9" rx="4" fill="#5eead4"/>
+        <path d="M55 205 H345 L328 225 H72 Z" fill="#c7d2fe"/>
+      </svg>
+    </div>
+
+    <!-- Wavy edge at the bottom of the hero -->
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z"/>
+    </svg>
+  </section>
+
+  <main>
+
+    <!-- TESTIMONIALS: filled in by script.js -->
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div id="testimonial-list" class="list"></div>
+    </section>
+
+    <!-- PROJECTS: filled in by script.js -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="project-list" class="list"></div>
+    </section>
+
+  </main>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-band">
+    <h2>Let's work together</h2>
+    <p>Send me an email or take a look at my code on GitHub.</p>
+    <div class="contact-buttons">
+      <a class="button" href="mailto:you@example.com">
+        <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m2 6 10 7 10-7"/>
+        </svg>
+        abbiekangethe@gmail.com
+      </a>
+      <a class="button outline" href="https://github.com/wacu-ak" target="_blank" rel="noopener">
+        <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m8 7-5 5 5 5M16 7l5 5-5 5"/>
+        </svg>
+        github.com/wacu-ak
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
