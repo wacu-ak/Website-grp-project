@@ -2,7 +2,7 @@
 
 A colourful, single-page personal portfolio built with plain HTML, CSS and JavaScript. No frameworks or libraries are used.
 
-**Live site:** [add your link here]
+**Live site:** https://github.com/wacu-ak/Website-grp-project.git
 
 ## Features
 
