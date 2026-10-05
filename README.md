@@ -14,7 +14,7 @@ A single-page personal portfolio built with plain HTML, CSS and JavaScript.
 - `script.js` - testimonial and project data, plus the code that shows them
 
 ## How to run
-Open `index.html` in your browser.
+Open https://github.com/wacu-ak/Website-grp-project.git in your browser.
 
 ## How to customise
 1. Replace "Your Name", the email and the GitHub link in `index.html`.
